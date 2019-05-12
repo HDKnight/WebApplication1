@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="V_KFZXRLinq">
+  <DataContextMoniker Name="/V_KFZXRLinqDataContext" />
+  <nestedChildShapes>
+    <classShape Id="b78a1187-dd07-44d0-8d20-ad1100c740c5" absoluteBounds="3.5, 2.25, 2, 1.7220992024739581">
+      <DataClassMoniker Name="/V_KFZXRLinqDataContext/V_KFZXR" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bf9974ac-95c1-4a9e-944a-cfe4fa707454" absoluteBounds="3.515, 2.71, 1.9700000000000002, 1.1620992024739583" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

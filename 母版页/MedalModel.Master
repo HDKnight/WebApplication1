@@ -1,0 +1,112 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MedalModel.master.cs" Inherits="母版页.MedalModel" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>员工勋章系统</title>
+
+    <link href="css/Medal.css" rel="stylesheet" />
+    <script src="http://localhost:61033/js/jquery-3.3.1.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+
+<body>
+    <form id="form1" runat="server">
+        <div id="divMain">
+            <div id="divHead">
+
+                <div id="divImage">
+                    <img src='<%this.ResolveUrl("~/images/huayan.png");%>' />
+                </div>
+
+                <%--<div id="divMenu">
+                    <div id="divBtn">
+                        <asp:Button ID="btn" runat="server" Text="按钮" />
+                    </div>
+                    <br />
+                    <br />
+                    <br />
+                    <div id="divName">
+                        <asp:Label ID="name" runat="server" Text="个人详情" BackColor="#99ccff" />
+                    </div>
+                </div>--%>
+                <div id="divSelect">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                        默认内容
+                    </asp:ContentPlaceHolder>
+                </div>
+                <%--<img src='<%this.ResolveUrl("~/images/2.png"); %>' width="1400px" height="200px"/>--%>
+            </div>
+            <div id="divCenter">
+                <div id="divLeft">
+                    <asp:Label runat="server" ID="lab" Text="查看个人勋章" Width="90%" Height="30" /><br />
+                    <asp:DropDownList runat="server" ID="DropDownList1" Width="90%" Height="30">
+                        <%--OnSelectedIndexChanged="drpGroup_SelectedIndexChanged">--%>
+                        <asp:ListItem Value="-99">--组别--</asp:ListItem>
+                        <asp:ListItem Value="1">1组</asp:ListItem>
+                        <asp:ListItem Value="2">2组</asp:ListItem>
+                        <asp:ListItem Value="3">3组</asp:ListItem>
+                        <asp:ListItem Value="4">4组</asp:ListItem>
+                        <asp:ListItem Value="5">5组</asp:ListItem>
+                    </asp:DropDownList><br />
+                    <asp:DropDownList runat="server" ID="DropDownList2" Width="90%" Height="30">
+                        <%--OnSelectedIndexChanged="drpGroup_SelectedIndexChanged">--%>
+                        <asp:ListItem Value="-99">--请选择班级--</asp:ListItem>
+                    </asp:DropDownList><br />
+                    <asp:DropDownList runat="server" ID="DropDownList3" Width="90%" Height="30">
+                        <%--OnSelectedIndexChanged="drpGroup_SelectedIndexChanged">--%>
+                        <asp:ListItem Value="-99">--请选择班级--</asp:ListItem>
+                    </asp:DropDownList><br />
+                    <asp:DropDownList runat="server" ID="DropDownList4" Width="90%" Height="30">
+                        <%--OnSelectedIndexChanged="drpGroup_SelectedIndexChanged">--%>
+                        <asp:ListItem Value="-99">--请选择班级--</asp:ListItem>
+                    </asp:DropDownList><br />
+
+                </div>
+
+                <div id="divContent">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        默认内容
+                    </asp:ContentPlaceHolder>
+                </div>
+
+            </div>
+
+            <div id="divFooter">
+                <br />
+                footer
+            </div>
+        </div>
+    </form>
+    <script src="js/jquery-3.3.1.js"></script>
+    <%--<script>
+        $(function () {
+            $("#drpGroup").change(function () {
+                /*如果没有选择选择具体的班级，就不要提交表单*/
+                if ($(this).val() != -99) {
+                    $("#form1").submit();
+                } else {
+                    $("#usersListBox")[0].options.length = 0;//清空用户列表
+                }
+
+            })
+        })
+    </script>--%>
+    <script>
+        total = document.documentElement.clientHeight;
+        colHeight = total - 65 - document.getElementById("divCenter").offsetTop;
+        document.getElementById("divCenter").style.height = colHeight + "px";
+    </script>
+
+    <%--<script>
+        total = document.documentElement.clientWidth;
+        colWidth = total -25 - document.getElementById("divCenter").offsetTop;
+        document.getElementById("divCenter").style.width = colWidth + "px";
+    </script>--%>
+</body>
+</html>

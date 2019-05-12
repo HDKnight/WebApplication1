@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <form action="server.ashx" method="post">
+        <div>
+            用&ensp;户&ensp;名：<input type="text" name="txtUsername" id="txtUsername" />
+        </div><br />
+        <div>
+            密&emsp;&emsp;码：<input type="password" name="txtPwd" id="txtPwd1" />
+        </div><br />
+        <div>
+            确认密码：<input type="password" name="txtPwd" id="txtPwd2" />
+        </div><br />
+        <div>
+            <input type="button" id="btnRegister" value="注册" />
+        </div>
+    </form>
+
+    <script src="js/jquery-3.3.1.js"></script>
+    <script>
+        //1.使用XMLHTTPRequest 对象实现
+
+        //2.使用jQuery封装的Ajax实现
+        $(function () {
+            $("#txtUsername").blur(function () {
+                $.ajax({
+                    url: "server.ashx",//请求的服务端地址
+                    type: "get",//请求的方式
+                    data: { "username": $(this).val() },//发送到服务端的数据
+                    success: function (data, status, xmlhttp) {//服务端成功处理时的回调函数
+                        alert(data + ":"+status);
+                    },
+                    error: function () {//服务端失败的回调函数
+                        alert("请求未成功！")
+                    },
+                    dataType: "text"//预期服务端发回的数据类型
+                })
+            })
+        })
+
+
+
+
+    </script>
+</body>
+</html>

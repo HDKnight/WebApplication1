@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <form action="server.ashx" method="post">
+        <div>
+            用户名：<input type="text" name="txtUsername" id="txtUsername" />
+        </div><br />
+        <div>
+            密&emsp;码：<input type="password" name="txtPwd" id="txtPwd" />
+        </div><br />
+        <div>
+            <input type="button" id="btnSubmit" value="登录" />
+            <input type="button" id="btnRegist" value="注册" />
+        </div>
+    </form>
+
+    <script src="js/jquery-3.3.1.js"></script>
+    <script>
+
+        //定义变量保存XMLHttpRequest 对象
+        var xmlHttp = null;
+        //创建Ajax请求的核心对象XmlHttpRequest
+        function createXmlHttpRequest() {
+            try {
+                xmlHttp = new XMLHttpRequest();//适用于IE7+，Firfox,Chrome等主流浏览器
+            }
+            catch (Error) {
+                xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");//适用于IE低版本
+            }
+        }
+
+        $(function () {
+            $("#btnSubmit").click(function () {
+                //1.调用函数创建XmlHttpRequest 对象
+                createXmlHttpRequest();
+
+                //2.获得需要提交给服务端的数据
+                var username = $("#txtUsername").val();
+                var pwd = $("#txtPwd").val();
+
+                //3.准备服务端路径,同时将需要发到服务端的数据附加在地址栏中
+                var serverPath = "server.ashx?username=" + username + "&pwd=" + pwd + "";
+
+                //4.设置好XmlHttpRequest 对象的参数
+                xmlHttp.open("get", serverPath, true);
+
+                //5.由于服务端什么时候处理好结果，客户端并不知道，通过XmlHttpRequest 对象的状态去监测
+                xmlHttp.onreadystatechange = clientCallback;
+
+                //6.通过XmlHt tpRequest 对象发送请求
+                xmlHttp.send();
+            })
+        })
+
+        function clientCallback() {
+            //XmlHttpRequest 对象的状态从开始发送请求到服务端处理完成返回给客户端 一共经历了几个阶段状态，分别是：
+            //0:请求未初始化
+            //1:和服务端的连接已建立
+            //2:请求已被服务端接收
+            //3:请求处理中
+            //4:请求处理完毕
+            if (xmlHttp.readyState == 4) {
+                if (xmlHttp.status == 200) {
+                    //获得服务端返回给客户端的结果（纯文本、xml、json、html）
+                    var msg = xmlHttp.responseText;
+                    alert(msg);
+                }
+            }
+
+        }
+    </script>
+</body>
+</html>

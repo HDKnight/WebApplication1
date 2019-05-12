@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="test" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=DONG_ZI_LI;Initial Catalog=test;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="testConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Users_Group" Member="Users_Group">
+    <Type Name="Users_Group">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="Sex" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="Pwd" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="Age" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="GroupName" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Address" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Tel" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="QQ" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="V_RJYLYLinq">
+  <DataContextMoniker Name="/V_RJYLYLinqDataContext" />
+  <nestedChildShapes>
+    <classShape Id="ea9cd95e-b20e-4722-a0d9-42ff7bf7b76f" absoluteBounds="2.375, 1, 2, 1.7220992024739581">
+      <DataClassMoniker Name="/V_RJYLYLinqDataContext/V_RJYLY" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b334706a-1300-451a-96b2-1e951183ae85" absoluteBounds="2.39, 1.46, 1.9700000000000002, 1.1620992024739583" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

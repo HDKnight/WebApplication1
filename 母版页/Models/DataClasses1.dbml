@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="MedalSystem" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=DONG_ZI_LI;Initial Catalog=MedalSystem;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="MedalSystemConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Medal_BonusPointMain" Member="Medal_BonusPointMain">
+    <Type Name="Medal_BonusPointMain">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserId" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="MedalId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MedalValue" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="IntegralValue" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="MedalValueMax" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IntegralValueMax" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="[Level]" Member="Level" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="V_GZKRRLinq">
+  <DataContextMoniker Name="/V_GZKRRLinqDataContext" />
+  <nestedChildShapes>
+    <classShape Id="69245bb3-c2df-4e23-ac28-25c9d732cc88" absoluteBounds="2.125, 1.625, 2, 1.7220992024739581">
+      <DataClassMoniker Name="/V_GZKRRLinqDataContext/V_GZKRR" />
+      <nestedChildShapes>
+        <elementListCompartment Id="66341689-7098-41ed-8699-4f44d8e740e9" absoluteBounds="2.14, 2.085, 1.9700000000000002, 1.1620992024739583" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

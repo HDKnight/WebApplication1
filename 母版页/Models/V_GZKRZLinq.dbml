@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="MedalSystem" Class="V_GZKRZLinqDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=DONG_ZI_LI;Initial Catalog=MedalSystem;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="MedalSystemConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.V_GZKRZ" Member="V_GZKRZ">
+    <Type Name="V_GZKRZ">
+      <Column Name="排名" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="员工编号" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="姓名" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="积分数" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="时间" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

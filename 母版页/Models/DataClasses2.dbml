@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="MedalSystem" Class="DataClasses2DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=DONG_ZI_LI;Initial Catalog=MedalSystem;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="MedalSystemConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.V_MedalSon" Member="V_MedalSon">
+    <Type Name="V_MedalSon">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="UserId" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="MedalId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MedalName" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="IntegralValue" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="IntegralSource" Type="System.String" DbType="VarChar(80)" CanBeNull="true" />
+      <Column Name="WriteTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

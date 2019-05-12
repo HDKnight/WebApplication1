@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DataClasses1">
+  <DataContextMoniker Name="/DataClasses1DataContext" />
+  <nestedChildShapes>
+    <classShape Id="0d471d1d-b34e-4103-a3dd-2cbf74d21326" absoluteBounds="1.75, 1.125, 2, 2.4612756347656251">
+      <DataClassMoniker Name="/DataClasses1DataContext/Medal_BonusPointMain" />
+      <nestedChildShapes>
+        <elementListCompartment Id="be2d1dfd-1b0b-4b10-9611-e9557585a015" absoluteBounds="1.7649999999999997, 1.585, 1.9700000000000002, 1.901275634765625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
